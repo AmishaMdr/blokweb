@@ -17,6 +17,7 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-button: #ffbc0d;
 }
 
 
@@ -29,3 +30,20 @@
 
 /* jouw code */
 
+header,body,footer {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+	background-color: var(--color-button);
+	border-radius: 1ch;
+	border: none;
+	text-decoration: none;
+	padding: 2ch 3.5ch;
+	font-size: 1em;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 2.5ch;
+}

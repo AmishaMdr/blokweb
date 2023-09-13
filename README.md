@@ -38,12 +38,12 @@ link naar de website die ik ga namaken: (https://www.mcdonalds.com/nl/nl-nl/full
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="../basiswebsite/readme-images/Pagina_1.png" width="375px" alt="pagina met de homepage erop">
+ <img src="images/pagina_1.png" width="375px" alt="pagina met de homepage erop">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="../basiswebsite/readme-images/Pagina_2.png" width="375px" alt="pagina met details over eten">
+ <img src="images/pagina_2.png" width="375px" alt="pagina met details over eten">
 
 </details>
 
