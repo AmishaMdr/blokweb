@@ -95,9 +95,14 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Ik vond de elementen aanspreken zonder classes en id lastig. Ik ken geen andere selectoren dus dat ga ik nog navragen.
+Alle content in mijn html zetten ging wel goed. Verder ken ik qua css niet veel over grid, layout etc dus daar ga ik mee oefenen.
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
+
+(Hebben we niet gedaan.)
 
 | student 1      | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
@@ -109,10 +114,10 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Gebruik end of type en andere selectoren. Eventueel css diner als je het lastig vindt.
+- Gebruik root voor herhalende kleuren of font etc.
+- Gebruik sections en flexbox om elementen naast elkaar te plaatsen.
+- Gebruik grid.
 
 </details>
 
