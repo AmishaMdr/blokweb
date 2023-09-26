@@ -1,0 +1,166 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+	--color-button: #ffbc0d;
+	--font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+html{
+	font-family:var(--font-family);
+}
+
+/* inline-block zorgt ervoor dat de list items naast elkaar komen te staan */
+header section li {
+	display: inline-block;
+	list-style: none;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	/* box-shadow zorgt voor een box met schaduw wat de header afscheidt van de body.
+	De eerste vier cijfers zijn de waardes voor de schaduw en de rgba staat voor de kleur.
+	Ik heb de waardes en kleur van de McDonalds site overgenomen omdat ik er zelf niet uitkwam.*/
+	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
+}/*  Hier eindigt mijn grid voor de header  */
+
+button {
+	background-color: var(--color-button);
+	border-radius: 1ch;
+	border: none;
+	text-decoration: none;
+	padding: 2ch 3.5ch;
+	font-size: 1em;
+}
+
+h2{
+    font-size: 3ch;
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: 2.5ch;
+}
+
+h4 {
+	font-size: 2.5ch;
+}
+
+/* Hier plaats ik mijn eerste image op een grid  */
+body section:nth-of-type(1) img{
+	width: 100%;
+	object-fit: cover;
+	grid-area: 3/4/15/16;
+}
+
+body>section:first-of-type {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}/* Hier eindigt de grid voor mijn eerste afbeelding */
+
+/* body>section:nth-of-type(2) {
+--code--
+} */
+
+/* Zo spreek je de 3 articles binnen een section aan om ze op de juiste grid positie te zetten */
+section:nth-of-type(3) article:nth-of-type(1) {
+	width: 100%;
+	object-fit: cover;
+	grid-area: 1/4/2/8;
+}
+
+section:nth-of-type(3) article:nth-of-type(2) {
+	width: 100%;
+	object-fit: cover;
+	grid-area: 1/8/2/12;
+}
+
+section:nth-of-type(3) article:nth-of-type(3) {
+	width: 100%;
+	object-fit: cover;
+	grid-area: 1/12/2/16;
+}
+
+body>section:nth-of-type(3) {
+	position:relative;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	column-gap: 2ch;
+	padding-bottom: 15ch;
+}/* Hier eindigt de grid voor section 3 */
+
+/* Hier spreek ik de volgende 2 articles aan  */
+section:nth-of-type(4) article:nth-of-type(1) {
+	width: 100%;
+	object-fit: cover;
+	grid-area: 1/4/2/10;
+}
+
+section:nth-of-type(4) article:nth-of-type(2) {
+	width: 100%;
+	object-fit: cover;
+	grid-area: 1/10/2/16;
+}
+
+body>section:nth-of-type(4) {
+	position:relative;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	column-gap: 2ch;
+	padding-bottom: 15ch;
+}/* Hier eindigt de grid voor section 4 */
+
+/* Hier spreek ik de volgende 2 articles aan  */
+section:nth-of-type(5) article:nth-of-type(1) {
+	width: 99%;
+	object-fit: cover;
+	grid-area: 1/4/2/10;
+	border-style: solid;
+	border-width: 0.1ch;
+	border-color: darkgrey;
+	border-radius: 0.5ch;
+}
+
+section:nth-of-type(5) article:nth-of-type(2) {
+	width: 99%;
+	object-fit: cover;
+	grid-area: 1/10/2/16;
+	border-style: solid;
+	border-width: 0.1ch;
+	border-color: darkgrey;
+	border-radius: 0.5ch;
+}
+
+body>section:nth-of-type(5) {
+	position:relative;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	column-gap: 2ch;
+}/* Hier eindigt de grid voor section 4 */
+
