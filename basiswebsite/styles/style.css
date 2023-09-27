@@ -16,7 +16,7 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#fff;
 	--color-button: #ffbc0d;
 	--font-family: Helvetica, Arial, sans-serif;
 }
@@ -37,11 +37,34 @@ html{
 header section li {
 	display: inline-block;
 	list-style: none;
+	padding-right: 1.5em;
+}
+
+header a{
+	display: flex;
+	justify-content: end;
+	padding-right: 3em;
+}
+
+.header1 ul:nth-of-type(1){
+	font-size: 0.9em;
+	font-weight: lighter;
+}
+
+.header1 ul:nth-of-type(2){
+	font-size: 1em;
+	padding: 1.5em 0em 1em 3em;
+}
+
+.header2 ul{
+	padding-left: 8em;
+	font-size: 0.9em;
+	font-weight: lighter;
 }
 
 header {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 4fr 6fr 6fr;
 	/* box-shadow zorgt voor een box met schaduw wat de header afscheidt van de body.
 	De eerste vier cijfers zijn de waardes voor de schaduw en de rgba staat voor de kleur.
 	Ik heb de waardes en kleur van de McDonalds site overgenomen omdat ik er zelf niet uitkwam.*/
@@ -50,15 +73,16 @@ header {
 
 button {
 	background-color: var(--color-button);
-	border-radius: 1ch;
+	border-radius: 0.3em;
 	border: none;
 	text-decoration: none;
-	padding: 2ch 3.5ch;
+	padding: 1em 1.5em;
 	font-size: 1em;
 }
 
 h2{
-    font-size: 3ch;
+    font-size: 3.5ch;
+	margin: 0;
 }
 
 h3 {
@@ -71,13 +95,34 @@ h4 {
 }
 
 /* Hier plaats ik mijn eerste image op een grid  */
-body section:nth-of-type(1) img{
+.car_img1 img{
 	width: 100%;
 	object-fit: cover;
 	grid-area: 3/4/15/16;
 }
 
-body>section:first-of-type {
+.car_img1 article{
+	position: absolute;
+	/* inset:  30% 20% 40% 22%; */
+	background-color: var(--color-background);
+	grid-area: 5/5/14/9;
+	border-radius: 0.5em;
+	padding: 2em;
+}
+
+.car_img1 h2{
+	width: 70%;
+	color: rgb(37, 37, 37);
+	font-size: 3.5ch;
+	font-weight: bolder;
+}
+
+ body p{
+	line-height: 1.5em;
+	font-weight: lighter;
+}
+
+.car_img1{
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
@@ -89,25 +134,25 @@ body>section:first-of-type {
 } */
 
 /* Zo spreek je de 3 articles binnen een section aan om ze op de juiste grid positie te zetten */
-section:nth-of-type(3) article:nth-of-type(1) {
+.art_1 article:nth-of-type(1) {
 	width: 100%;
 	object-fit: cover;
 	grid-area: 1/4/2/8;
 }
 
-section:nth-of-type(3) article:nth-of-type(2) {
+.art_1 article:nth-of-type(2) {
 	width: 100%;
 	object-fit: cover;
 	grid-area: 1/8/2/12;
 }
 
-section:nth-of-type(3) article:nth-of-type(3) {
+.art_1 article:nth-of-type(3) {
 	width: 100%;
 	object-fit: cover;
 	grid-area: 1/12/2/16;
 }
 
-body>section:nth-of-type(3) {
+.art_1 {
 	position:relative;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
@@ -116,19 +161,19 @@ body>section:nth-of-type(3) {
 }/* Hier eindigt de grid voor section 3 */
 
 /* Hier spreek ik de volgende 2 articles aan  */
-section:nth-of-type(4) article:nth-of-type(1) {
+.art_2 article:nth-of-type(1) {
 	width: 100%;
 	object-fit: cover;
 	grid-area: 1/4/2/10;
 }
 
-section:nth-of-type(4) article:nth-of-type(2) {
+.art_2 article:nth-of-type(2) {
 	width: 100%;
 	object-fit: cover;
 	grid-area: 1/10/2/16;
 }
 
-body>section:nth-of-type(4) {
+.art_2 {
 	position:relative;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
@@ -137,7 +182,7 @@ body>section:nth-of-type(4) {
 }/* Hier eindigt de grid voor section 4 */
 
 /* Hier spreek ik de volgende 2 articles aan  */
-section:nth-of-type(5) article:nth-of-type(1) {
+.art_3 article:nth-of-type(1) {
 	width: 99%;
 	object-fit: cover;
 	grid-area: 1/4/2/10;
@@ -147,7 +192,7 @@ section:nth-of-type(5) article:nth-of-type(1) {
 	border-radius: 0.5ch;
 }
 
-section:nth-of-type(5) article:nth-of-type(2) {
+.art_3 article:nth-of-type(2) {
 	width: 99%;
 	object-fit: cover;
 	grid-area: 1/10/2/16;
@@ -157,10 +202,127 @@ section:nth-of-type(5) article:nth-of-type(2) {
 	border-radius: 0.5ch;
 }
 
-body>section:nth-of-type(5) {
+.art_3 h2{
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+.art_3 p{
+	margin-left: 2em;
+}
+
+.art_3 article:nth-of-type(1) button:nth-of-type(1){
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+.art_3 article:nth-of-type(2) button:nth-of-type(1) {
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.art_3{
 	position:relative;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
 	column-gap: 2ch;
+	padding-bottom: 13ch;
 }/* Hier eindigt de grid voor section 4 */
+
+/* begin van de footer navigatie */
+.footer_nav li {
+	object-fit: cover;
+    list-style: none;
+}
+
+.footer_nav ul:nth-of-type(1) {
+	width: 100%;
+	object-fit: cover;
+	list-style: none;
+	grid-area: 1/4/2/7;
+	padding-left: 1em;
+}
+
+.footer_nav ul li:first-of-type {
+	font-weight: bold;
+	padding-bottom: 1em;
+}
+
+.footer_nav li {
+	padding-bottom: 0.7em;
+	font-weight: lighter;
+	font-size: 1.7ch;
+}
+
+
+.footer_nav ul:nth-of-type(2) {
+	width: 100%;
+	object-fit: cover;
+	list-style: none;
+	grid-area: 1/9/2/12;
+	padding: 0;
+}
+
+.footer_nav ul:nth-of-type(3) {
+	width: 100%;
+	object-fit: cover;
+	list-style: none;
+	grid-area: 1/14/2/17;
+	padding: 0;
+}
+
+.footer_nav {
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+} /* Einde footer navigatie */
+
+/* positie van de socials icons. */
+.logo {
+	padding: 2em 0em 2em 18em;
+}
+
+.logo img{
+	padding-right: 0.1em;
+	padding-left: 1em;
+}/* einde positie van de socials icons. */
+
+/* footer onder de hr */
+footer hr {
+	margin-bottom: 2em;
+	width: 68%;
+}
+
+.footer_nav2 li {
+	display: inline-block;
+	list-style: none;
+	padding-left: 1em;
+	font-weight: lighter;
+}
+
+.footer_nav2 ul:nth-of-type(1) {
+	width: 100%;
+	object-fit: cover;
+	list-style: none;
+	padding: 0;
+	grid-area: 1/4/2/7;
+}
+
+.footer_nav2 img {
+	width: 2em;
+	padding-top: 1.2ch;
+	grid-area: 1/12/2/16;
+}
+
+.footer_nav2 p {
+	grid-area: 1/12/2/17;
+	padding-left: 2.5em;
+}
+
+.footer_nav2 {
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	margin-bottom: 6em;
+}
+ /* einde footer onder de hr */
 
