@@ -130,9 +130,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Ik had moeite met de selectoren en flexbox. De basics zijn weggevallen waardoor het lastig is om door te gaan als ik vastloop..
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
+
+(Hebben we niet gedaan.)
 
 | student 1      | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
@@ -144,10 +148,11 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Gebruik grid met sections en articles.
+- Gebruik background image voor de carousel afbeeldingen om er later tekst op te zetten.
+- Maak eerst de grid en vul het daarna met content.
+- Gebruik friction ipv % dat is makkelijker.
+- Gebruik nth-of-type.
 
 </details>
 
