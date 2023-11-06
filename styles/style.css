@@ -19,6 +19,7 @@
 	--color-background:#fff;
 	--color-button: #ffbc0d;
 	--font-family: Helvetica, Arial, sans-serif;
+	--accent-color: rgb(206, 20, 20);
 }
 
 
@@ -33,28 +34,148 @@ html{
 	font-family:var(--font-family);
 }
 
+/* Dit is de code die ik heb gekopieërd van codepen die ik heb gevonden via codepen
+Ik heb dit vervolgens aangepast om het werkend te maken voor mijn pagina. */
+
+.header2 a {
+	position: relative;
+	text-decoration:none;
+	transition:color .5s;
+  }
+  
+.header2 a::after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:100%;
+	height:.2em;
+	background-color:var(--accent-color);
+  
+	  /* initieel horizontaal helemaal plat */
+	transform:scaleX(0);
+	transition:transform .5s;
+  }
+  
+  /* hover en focus */
+.header2 a:is(:hover, :focus-visible)::after {
+	  /* nu horizontaal de hele breedte */
+	transform:scaleX(1);
+  }
+  
+  /* active */
+.header2 a:active {
+	--link-color:var(--accent-color);
+  }
+
+/* Begin states van de main header */
+
+  .header1 a {
+	position: relative;
+  
+	text-decoration:none;
+  
+	transition:color .5s;
+  }
+  
+.header1 a::after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:100%;
+	height:.2em;
+	background-color:var(--accent-color);
+  
+	  /* initieel horizontaal helemaal plat */
+	transform:scaleX(0);
+	transition:transform .5s;
+  }
+  
+  /* hover en focus */
+.header1 a:is(:hover, :focus-visible)::after {
+	  /* nu horizontaal de hele breedte */
+	transform:scaleX(1);
+  }
+  
+  /* active */
+.header1 a:active {
+	--link-color:var(--accent-color);
+  }
+
+/* Einde code states  */
+
 /* inline-block zorgt ervoor dat de list items naast elkaar komen te staan */
 header section li {
 	display: inline-block;
+	position: relative;
 	list-style: none;
-	padding-right: 1.5em;
+	padding: 0;
 }
 
-header a{
+/* header a:nth-of-type(1) {
+    background-color: #ffbc0d;
+} */
+
+header a:nth-of-type(1){
 	display: flex;
 	justify-content: end;
-	padding-right: 3em;
+	padding-right: 2em;
 }
 
-.header1 ul:nth-of-type(1){
+.header1 a, 
+.header2 a, 
+.dropdown a, 
+.footer_nav a, 
+.footer_nav2 a{
+	text-decoration: 0;
+	color: #111;
+}
+
+.header1 ul:nth-of-type(1) a:nth-of-type(1){
 	font-size: 0.9em;
 	font-weight: lighter;
 }
 
-.header1 ul:nth-of-type(2){
+.header1 ul:nth-of-type(2) a:nth-of-type(1){
 	font-size: 1em;
-	padding: 1.5em 0em 1em 3em;
+	padding: 1.5em 1em 1em 1em;
+	display: block;
 }
+
+/* Begin popup nav header */
+.header1 ul:nth-of-type(2) .dropdown li img{
+	margin-left: 10ch;
+}
+
+.header1 ul:nth-of-type(2) .dropdown li{
+	display: inline-flex;
+	align-items: center;
+	width: min-content;
+	margin-top: 2ch;
+}
+
+.header1 ul:nth-of-type(2) .dropdown{
+	width: 45vw;
+	background-color: var(--color-background);
+	position: absolute;
+	z-index: 2;
+	display: inline-block;
+	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
+	margin-top: 2ch;
+	padding: 0;
+}
+
+.header1 ul:nth-of-type(2) .dropdown li:last-of-type a{
+	width: 21ch;
+	margin-left: 35ch;
+	margin-bottom: 5ch;
+	border: .01em solid black;
+	text-decoration: 0;
+	padding: 1em;
+	border-radius: .3em;
+	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
+}/* Einde popup nav header */
 
 .header2 ul{
 	padding-left: 8em;
@@ -62,7 +183,11 @@ header a{
 	font-weight: lighter;
 }
 
-header {
+.header2 ul:nth-of-type(1) a:nth-of-type(1){
+	padding-left: 0.5em;
+}
+
+header{
 	display: grid;
 	grid-template-columns: 4fr 6fr 6fr;
 	/* box-shadow zorgt voor een box met schaduw wat de header afscheidt van de body.
@@ -71,13 +196,21 @@ header {
 	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
 }/*  Hier eindigt mijn grid voor de header  */
 
-button {
+.car_img1 a, .car_img2 a, .car_img3 a, .art_1 a, .art_2 a, .art_3 a{
 	background-color: var(--color-button);
 	border-radius: 0.3em;
 	border: none;
 	text-decoration: none;
 	padding: 1em 1.5em;
 	font-size: 1em;
+	display: inline-block;
+	color: var(--color-text);
+}
+
+h1{
+	color: #fff;
+	font-size: 0.01em;
+	width: fit-content;
 }
 
 h2{
@@ -91,11 +224,65 @@ h3 {
 }
 
 h4 {
-	font-size: 2.5ch;
+	font-size: 0.01em;
+	width: 0.01em;
+	color: #fff;
 }
+
+p {
+	padding-bottom: 0.5em;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+
+/* Styling van de carousel */
+.container {
+	width: 73em;
+	height: 33em;
+	overflow-y: hidden;
+	overflow-x: auto;
+	display: flex;
+	margin-left: 17%;
+	margin-top: 5%;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+.container img{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+}
+
+.car_nav p {
+	font-size: 0.01em;
+	color: #fff;
+	margin-left: 170em;
+}
+
+.car_nav {
+	z-index: 2;
+	position: absolute;
+	display: flex;
+	margin-left: 45%;
+	margin-top: 1.5%;
+}
+
+.car_nav a {
+	background-color: rgb(214, 212, 212);
+	border-radius: 50%;
+	display: inline-flex;
+	text-decoration: 0;
+	cursor: pointer;
+	margin-right: 5ch;
+	height: 3ch;
+	width: 3ch;
+}/* Einde styling carousel */
 
 /* Hier plaats ik mijn eerste image op een grid  */
 .car_img1 img{
+	z-index: 1;
 	width: 100%;
 	object-fit: cover;
 	grid-area: 3/4/15/16;
@@ -103,7 +290,7 @@ h4 {
 
 .car_img1 article{
 	position: absolute;
-	/* inset:  30% 20% 40% 22%; */
+	object-fit: cover;
 	background-color: var(--color-background);
 	grid-area: 5/5/14/9;
 	border-radius: 0.5em;
@@ -117,21 +304,86 @@ h4 {
 	font-weight: bolder;
 }
 
- body p{
-	line-height: 1.5em;
-	font-weight: lighter;
-}
-
 .car_img1{
-	position: relative;
+	z-index: 1;
+	position: absolute;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
 	grid-template-rows: repeat(16, 1fr);
 }/* Hier eindigt de grid voor mijn eerste afbeelding */
 
-/* body>section:nth-of-type(2) {
---code--
-} */
+/* Hier plaats ik mijn eerste image op een grid  */
+.car_img2 img{
+	width: 100%;
+	object-fit: cover;
+	grid-area: 3/4/15/16;
+}
+
+.car_img2 article{
+	position: absolute;
+	object-fit: cover;
+	background-color: var(--color-background);
+	grid-area: 5/5/14/9;
+	border-radius: 0.5em;
+	padding: 2em;
+}
+
+.car_img2 h2{
+	width: 70%;
+	color: rgb(37, 37, 37);
+	font-size: 3.5ch;
+	font-weight: bolder;
+}
+
+.car_img2{
+	z-index: 1;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}/* Hier eindigt de grid voor mijn eerste afbeelding */
+
+/* Hier plaats ik mijn eerste image op een grid  */
+.car_img3 img{
+	width: 100%;
+	object-fit: cover;
+	grid-area: 3/4/15/16;
+}
+
+.car_img3 article{
+	position: absolute;
+	object-fit: cover;
+	background-color: var(--color-background);
+	grid-area: 5/5/14/9;
+	border-radius: 0.5em;
+	padding: 2em;
+}
+
+.car_img3 h2{
+	width: 70%;
+	color: rgb(37, 37, 37);
+	font-size: 3.5ch;
+	font-weight: bolder;
+}
+
+.car_img3{
+	z-index: 1;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}/* Hier eindigt de grid voor mijn eerste afbeelding */
+
+/* .art_1, .art_2, .art_3 */
+
+.art_1 p:nth-of-type(2), 
+.art_2 p:nth-of-type(2),
+.art_3 p:nth-of-type(2) {
+	font-size: 0.01em;
+	width: fit-content;
+	margin-top: 50em;
+	color: #fff;
+}
 
 /* Zo spreek je de 3 articles binnen een section aan om ze op de juiste grid positie te zetten */
 .art_1 article:nth-of-type(1) {
@@ -153,11 +405,12 @@ h4 {
 }
 
 .art_1 {
-	position:relative;
+	position: relative;
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
 	column-gap: 2ch;
 	padding-bottom: 15ch;
+	padding-top: 15ch;
 }/* Hier eindigt de grid voor section 3 */
 
 /* Hier spreek ik de volgende 2 articles aan  */
@@ -211,12 +464,12 @@ h4 {
 	margin-left: 2em;
 }
 
-.art_3 article:nth-of-type(1) button:nth-of-type(1){
+.art_3 article:nth-of-type(1) a:nth-of-type(1){
 	margin-left: 2em;
 	margin-top: 2em;
 }
 
-.art_3 article:nth-of-type(2) button:nth-of-type(1) {
+.art_3 article:nth-of-type(2) a:nth-of-type(1) {
 	margin-left: 2em;
 	margin-top: 1em;
 	margin-bottom: 2em;
@@ -282,9 +535,10 @@ h4 {
 	padding: 2em 0em 2em 18em;
 }
 
-.logo img{
+.logo a{
 	padding-right: 0.1em;
 	padding-left: 1em;
+	text-decoration: 0;
 }/* einde positie van de socials icons. */
 
 /* footer onder de hr */
@@ -309,6 +563,7 @@ footer hr {
 }
 
 .footer_nav2 img {
+	object-fit: cover;
 	width: 2em;
 	padding-top: 1.2ch;
 	grid-area: 1/12/2/16;
@@ -323,6 +578,4 @@ footer hr {
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
 	margin-bottom: 6em;
-}
- /* einde footer onder de hr */
-
+}/* einde footer onder de hr */

@@ -14,177 +14,254 @@
 
 <header>
 
-	<h1 hidden>Home pagina McDonald's site</h1>
-
-	<a href="../page2.html"><img src="images/logo_mcdonalds.jpeg" alt="Logo van McDonalds"></a>
+	<a href="../page2.html">
+		<img src="images/logo_mcdonalds.jpeg" alt="Logo van McDonalds">
+	</a>
 
 	<section class="header1">
+		<h4>Header navigatie</h4>
 		<ul>
-			<li>App</li>
-			<li>McDonald's Nieuwsbrief</li>
-			<li>Werken bij McDonald's</li>
-			<li>Franchising</li>
+			<li><a href="#">App</a></li>
+			<li><a href="#">McDonald's Nieuwsbrief</a></li>
+			<li><a href="#">Werken bij McDonald's</a></li>
+			<li><a href="#">Franchising</a></li>
 		</ul>
 
 		<ul>
-			<li>Menu</li>
-			<li>Newsroom Pers</li>
-			<li>Services</li>
-			<li>Familie</li>
-			<li>Ook dat doet McDonald's</li>
+			<li><a href="#">Menu</a>
+				<ul class="dropdown">
+					<li><a href="../page2.html">
+							<img src="images/kip.jpeg" alt="Afbeelding kipburger">
+						</a><a href="../page2.html">Kip</a></li>
+					<li><a href="../page2.html">
+							<img src="images/kip.jpeg" alt="Afbeelding kipburger">
+						</a><a href="../page2.html">Kip</a></li>
+					<li><a href="../page2.html">
+							<img src="images/kip.jpeg" alt="Afbeelding kipburger">
+						</a><a href="../page2.html">Kip</a></li>
+					<li><a href="../page2.html">Bekijk alle producten</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Newsroom Pers</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Familie</a></li>
+			<li><a href="#">Ook dat doet McDonald's</a></li>
 		</ul>
 	</section>
 
 	<section class="header2">
+		<h4>Secundaire header navigatie</h4>
 		<ul>
-			<li>Zoeken</li>
-			<li>Vind een restaurant</li>
+			<!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+			<li><a href="#">Zoeken</a></li>
+			<!-- <i class="fa-solid fa-location-dot" style="color: #d12929;"></i> -->
+			<li><a href="#">Vind een restaurant</a></li>
+
+			<!-- <li><span class="fas fa-magnifying-glass"></span><a href="#">Zoeken</a></li>
+			<li><span class="fas fa-location-dot" style="color: #d12929;"></span><a href="#">Vind een restaurant</a></li> -->
 		</ul>
 	</section>
 
 </header>
 
 <body>
+	<!-- <main class="container">
+		<section class="car_img1">
+			<title>Decoratieve afbeelding om vegetarisch eten te stimuleren.</title><img
+				src="images/favorieten_img.jpeg"
+				alt="Afbeelding van vegetarische burgers en nuggets '100% meatless 100%McDonalds' ">
+			<article>
+				<h2>Worden dit je nieuwe favorieten?</h2>
+				<p>Meet the Meatless. Stuk voor stuk met de vertrouwde McDonald's smaak, alleen dan zonder vlees!</p>
+				<a href="#">Ontdek de range!</a>
+			</article>
+		</section>
+		<section class="car_img2">
+			<title>Decoratieve afbeelding om te laten zien hoe gezellig het is.</title><img src="images/car2.png"
+				alt="Afbeelding van werkende jongens die lachen">
+			<article>
+				<h2>Dat is lekker werken.</h2>
+				<p>Ontdek meer over werken bij McDonald's.</p>
+				<a href="#">meer info</a>
+			</article>
+		</section>
+		<section class="car_img3">
+			<title>Decoratieve afbeelding om plastic en statiegeld bekers te laten zien.</title><img
+				src="images/car3.png"
+				alt="Afbeelding van plastic/papieren bekers en statiegeld bekers 'Eenmalige beker met plastic toeslag. Statiegeldbeker' ">
+			<article>
+				<h2>Even wennen.</h2>
+				<p>De herbruikbare beker is in te leveren bij de kassa. Kies je voor een eenmalige te gebruiken beker
+					met
+					plastic toeslag, dan mag die gewoon in de afvalbak.</p>
+				<a href="#">Ontdek meer</a>
+			</article>
+		</section>
+		<main> -->
 
-	<section class="car_img1">
-		<img src="images/favorieten_img.jpeg" alt="Afbeelding van vegetarische burgers en nuggets">
+	<h1>Home pagina McDonald's site</h1>
 
-		<article>
-			<h2>Worden dit je nieuwe favorieten?</h2>
-			<p>Meet the Meatless. Stuk voor stuk met de vertrouwde McDonald's smaak, alleen dan zonder vlees!</p>
-			<button>Ontdek de range!</button>
-		</article>
+	<section class="container">
+		<h4>Afbeeldingen burgers en werknemers</h4>
+
+		<img id="item1" src="images/favorieten_img.jpeg" alt="Afbeelding van vegetarische burgers en nuggets '100% meatless 100%McDonalds' ">
+		<img id="item2" src="images/car2.png" alt="Afbeelding van werkende jongens die lachen">
+		<img id="item3" src="images/car3.png" alt="Afbeelding van plastic/papieren bekers en statiegeld bekers 'Eenmalige beker met plastic toeslag. Statiegeldbeker'">
+	</section>
+
+	<section class="car_nav">
+		<h4>Buttons voor carousel</h4>
+
+		<a href="#item1">
+			<p>"Knop voor eerste slide carousel van vegetarsiche burgers en nuggets"</p>
+		</a>
+		<a href="#item2">
+			<p>"Knop voor tweede slide carousel van werkende jongens die lachen"</p>
+		</a>
+		<a href="#item3">
+			<p>"Knop voor derde slide carousel van plastic/papieren bekers en statiegeld bekers"</p>
+		</a>
 	</section>
 
 	<section class="art_1">
-		<h4 hidden>Tijd Voor Jezelf</h4>
+		<h4>Tijd Voor Jezelf</h4>
+
 		<article>
 			<img src="images/mac_app.jpeg" alt="vrouw met friet en burger afbeelding">
 			<h3>MyMcDonald's App</h3>
-			<p>Met de MyMcDonald's App spaar je voor gratis favorieten, geniet je van fun, handige tools en persoonlijke
-				Deals!
-			</p>
-			<button>Meer informatie</button>
+			<p>Met de MyMcDonald's App spaar je voor gratis favorieten, geniet je van fun, handige tools enpersoonlijke Deals!</p>
+			<a href="#">Meer informatie</a>
+			<p>Meer informatie knop over de MyMcDonald's App</p>
 		</article>
 
 		<article>
-			<img src="images/mccafe.jpeg" alt="koffiebonen in de vorm van een beker afbeelding">
+			<img src="images/mccafe.jpeg" alt="koffiebonen in de vorm van een beker afbeelding 'McCafé' ">
 			<h3>Even you-time?</h3>
-			<p>Er is altijd een McCafé in de buurt. Daar kun je elk moment van de dag terecht voor je favoriete koffie
-				en
-				lekkers.</p>
-			<button>Meer weten</button>
+			<p>Er is altijd een McCafé in de buurt. Daar kun je elk moment van de dag terecht voor je favoriete koffie en lekkers.</p>
+			<a href="#">Meer weten</a>
+			<p>Meer weten knop over McCafe's in de buurt</p>
 		</article>
 
 		<article>
-			<img src="images/bezorgen.jpeg" alt="geen zorgen we bezorgen afbeelding">
-			<h3>Geen zorgen, we bezorgen</h3>
-			<p>Je hoeft de deur niet meer uit om te genieten van onze producten. Laat ze bezorgen met McDelivery.</p>
-			<button>Nu proberen</button>
+			<img src="images/bezorgen.jpeg" alt="'Geen zorgen, We bezorgen' afbeelding van man op fiets">
+			<h3>Geen zorgen, We bezorgen</h3>
+			<p>Je hoeft de deur niet meer uit om te genieten van onze producten. Laat ze bezorgen metMcDelivery.</p>
+			<a href="#">Nu proberen</a>
+			<p>Nu proberen knop over laten bezorgen met McDelivery</p>
 		</article>
 	</section>
 
 	<section class="art_2">
-		<h4 hidden>Jouw toekomst</h4>
+		<h4>Jouw toekomst</h4>
+
 		<article>
-			<img src="images/werken.jpeg" alt="werknemer met haar baas afbeelding">
+			<img src="images/werken.jpeg" alt="lachende werknemer met haar baas afbeelding 'Dat is lekker werken' ">
 			<h3>Vind de allerleukste (bij)baan!</h3>
 			<p>Wil je ook werken met de leukste Crew? Start bij McDonald's en solliciteer direct.</p>
-			<button>Solliciteren</button>
+			<a href="#">Solliciteren</a>
+			<p>Solliciteren knop over solliciteren bij McDonald's</p>
 		</article>
 
 		<article>
-			<img src="images/academy.jpeg" alt="lachende mensen afbeelding">
+			<img src="images/academy.jpeg" alt="lachende werknemers afbeelding 'McDonald's Academy' ">
 			<h3>Een gouden investering in je toekomst!</h3>
-			<p>McDonald's Academy biedt medewerkers veel verschillende mogelijkheden om te blijven leren en ontwikkelen.
-				Wat wil jij als eerste leren?</p>
-			<button>Meer weten?</button>
+			<p>McDonald's Academy biedt medewerkers veel verschillende mogelijkheden om te blijven leren en
+				ontwikkelen. Wat wil jij als eerste leren?</p>
+			<a href="#">Meer weten?</a>
+			<p>Meer weten knop over McDonald's Academy</p>
 		</article>
 	</section>
 
 	<section class="art_3">
-		<h4 hidden>Blijf op de hoogte</h4>
+		<h4>Blijf op de hoogte</h4>
+
 		<article>
-			<img src="images/volgons.jpeg" alt="envelop met afbeeldingen">
+			<img src="images/volgons.jpeg" alt="envelop met afbeeldingen en een winactie 'WIN' ">
 			<h2>Volg ons op de voet</h2>
 			<p>Onze nieuwsbrief: van tijdelijke toppers tot waanzinnige winacties.*</p>
-			<button>Schrijf je in</button>
+			<a href="#">Schrijf je in</a>
+			<p>Schrijf je in knop op McDonald's nieuwsbrief</p>
 		</article>
 
 		<article>
-			<img src="images/genoten.jpeg" alt="3 genietende mensen">
+			<img src="images/genoten.jpeg" alt="3 genietende mensen 1 werknemer en 2 klanten">
 			<h2>Heb je genoten?</h2>
-			<p>We zijn benieuwd naar jouw feedback. En heb je een vraag of opmerking over je restaurantbezoek? Laat het
-				aan
-				het restaurantteam weten.*</p>
-			<button>Geef je mening</button>
+			<p>We zijn benieuwd naar jouw feedback. En heb je een vraag of opmerking over je restaurantbezoek? 
+				Laat het aan het restaurantteam weten.*</p>
+			<a href="#">Geef je mening</a>
+			<p>Geef je mening knop over feedback over jouw restaurantbezoek</p>
 		</article>
 	</section>
 
+	<footer>
+
+		<section class="footer_nav">
+			<h4>navigatie footer</h4>
+
+			<ul>
+				<li>Over ons</li>
+
+				<li><a href="#">Over ons</a></li>
+				<li><a href="#">Onze geschiedenis</a></li>
+				<li><a href="#">Ons management</a></li>
+				<li><a href="#">Waar staan we voor?</a></li>
+				<li><a href="#">Nieuwe restaurantlocaties</a></li>
+				<li><a href="#">Franchising</a></li>
+			</ul>
+
+			<ul>
+				<li>Services</li>
+
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Meer weten</a></li>
+				<li><a href="#">McDonald's Nieuwsbrief</a></li>
+				<li><a href="#">App</a></li>
+				<li><a href="#">McCafé</a></li>
+			</ul>
+
+			<ul>
+				<li>Contact</li>
+
+				<li><a href="#">Online gastenservice</a></li>
+				<li><a href="#">Pers Contact</a></li>
+				<li><a href="#">Newsroom Pers</a></li>
+			</ul>
+		</section>
+
+		<section class="logo">
+			<h4>Social media icons</h4>
+
+			<a href="#">
+				<img src="images/footerlogo1.png" alt="youtube icon">
+			</a>
+			<a href="#">
+				<img src="images/footerlogo2.png" alt="instagram icon">
+			</a>
+			<a href="#">
+				<img src="images/footerlogo3.png" alt="facebook icon">
+			</a>
+		</section>
+
+		<hr>
+
+		<section class="footer_nav2">
+			<h4>Bedrijf</h4>
+			
+			<ul>
+				<li><a href="#">Disclaimer</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Cookies</a></li>
+			</ul>
+
+			<img src="images/footerlogo4.jpeg" alt="McDonald's logo">
+
+			<p>© Copyright © 2022 McDonald's Nederland.</p>
+		</section>
+
+	</footer>
+
 	<script defer src="scripts/script.js"></script>
-
-<footer>
-
-	<section class="footer_nav">
-		<h4 hidden>navigatie footer</h4>
-		<ul>
-			<li>Over ons</li>
-
-			<li>Over ons</li>
-			<li>Onze geschiedenis</li>
-			<li>Ons management</li>
-			<li>Waar staan we voor?</li>
-			<li>Nieuwe restaurantlocaties</li>
-			<li>Franchising</li>
-		</ul>
-
-		<ul>
-			<li>Services</li>
-
-			<li>Services</li>
-			<li>Meer weten</li>
-			<li>McDonald's Nieuwsbrief</li>
-			<li>App</li>
-			<li>McCafé</li>
-		</ul>
-
-		<ul>
-			<li>Contact</li>
-
-			<li>Online gastenservice</li>
-			<li>Pers Contact</li>
-			<li>Newsroom Pers</li>
-		</ul>
-	</section>
-
-	<section class="logo">
-		<img src="images/footerlogo1.png" alt="youtube icon">
-		<img src="images/footerlogo2.png" alt="instagram icon">
-		<img src="images/footerlogo3.png" alt="facebook icon">
-	</section>
-
-	<hr>
-
-	<section class="footer_nav2">
-		<ul>
-			<li>Disclaimer</li>
-			<li>Privacy</li>
-			<li>Cookies</li>
-		</ul>
-
-		<img src="images/footerlogo4.jpeg" alt="McDonald's logo">
-
-		<p>© Copyright © 2022 McDonald's Nederland.</p>
-	</section>
-
-</footer>
 
 </body>
 
 </html>
-
-<!-- Bronnen: 
-- McDonalds site: https://www.mcdonalds.com/nl/nl-nl.html
-- DLO lesmateriaal
-- Klasgenoten, studentassistenten en docents hulp.
--->

@@ -38,12 +38,12 @@ link naar de website die ik ga namaken: (https://www.mcdonalds.com/nl/nl-nl/full
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="images/pagina_1.png" width="375px" alt="pagina met de homepage erop">
+ <img src="readme-images/pagina_1.png" width="375px" alt="pagina met de homepage erop">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="images/pagina_2.png" width="375px" alt="pagina met details over eten">
+ <img src="readme-images/pagina_2.png" width="375px" alt="pagina met details over eten">
 
 </details>
 
@@ -130,7 +130,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Ik had moeite met de selectoren en flexbox. De basics zijn weggevallen waardoor het lastig is om door te gaan als ik vastloop..
+Ik had moeite met de selectoren en flexbox. De basics zijn weggevallen waardoor het lastig is om door te gaan als ik vastloop.
 
 ### Agenda voor meeting
 
@@ -165,6 +165,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+De resultaten van de toegankelijkheidstesten:
+
+  <img src="readme-images/WCAg.png" alt="WCAg checklist test">
+
+Mijn bevindingen uit de testen:
+
+- Sommige onderdelen komen niet voor in mijn site zoals video of telefoon formaat omdat ik responsive doe. 
+Ik heb telefoon formaat nog niet bereikt tot nu toe dus ik heb die vragen op nee gelaten.
+- Veel doet McDonald's niet eens zo slecht dus de verschillen tussen mijn site en die van hun waren niet zo groot.
+- Er zijn niet zoveel errors dan andere sites van medeklasgenoten.
+- De site kan je niet zomaar valideren je moet de code van de site erin zetten.
+- Sommige dingen zoals je gebruikt button element voor buttons zijn niet perse het enige antwoord.
+Ik heb linkjes dus a elementen gebruikt als button omdat mij dat werd aangeraden en dat werkt ook goed.
+- Contrast gaat al prima op de site dus dat werkt goed.
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -176,9 +191,15 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Aanspreken van elementen gaat al een stuk beter. Ik vind het nog lastig om mijn site responsive te maken. 
+Mijn logo werkt niet mee als ik het een width geef. Ik werd daardoor ontmoedigd om door te gaan met responsiveness maar ik ga nog een poging doen.
+Grid is soms ook lastig ik kan het nu wel maken, maar het aanpassen vind ik nog eng omdat ik bang ben dat het stuk gaat.
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
+
+(Hebben we niet gedaan.)
 
 | student 1      | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
@@ -190,10 +211,10 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Gebruik title tags voor je images.
+- Gebruik alt voor linkjes ipv buttons.
+- Laat linkjes eruit zien als linkjes.
+- Je werkt netjes, maar moet nog veel doen.
 
 </details>
 
@@ -228,8 +249,14 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
-3. ...
+1. McDonalds site: https://www.mcdonalds.com/nl/nl-nl.html
+2. DLO lesmateriaal
+3. Klasgenoten, studentassistenten en docents hulp.
+4. Simple Dropdown Menu Using HTML and CS: https://youtu.be/eKo1NV1qxbc?si=PTzh-d6OnuS67gV5
+Dit werkte niet helemaal dus ik heb een aantal vragen gesteld aan chatGPT voor het js gedeelte.
+5. Learn to build Carousel using pure CSS: https://youtu.be/vnQNb9fXP9o?si=NacXUM8f7mm0UI43
+7. Codepen states voorbeelden van DLO: https://codepen.io/shooft/pen/KKbweGB
+8. Ik heb vooral hulp gevraagd aan mijn klasgenoot en mijn neef dus daarom heb ik niet veel bronnen.
+Ik ben niet goed in youtube video's gebruiken of google nadoen want ik begrijp het niet op die manier.
 
 </details>
