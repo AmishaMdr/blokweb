@@ -34,7 +34,73 @@ html{
 	font-family:var(--font-family);
 }
 
-/* Dit is de code die ik heb gekopieërd van codepen die ik heb gevonden via codepen
+/* Begin button animatie. Dit is de code die ik heb gekopieërd van codepen en heb aangepast. 
+Ik wist wat de elementen deden waardoor ik het makkelijk kon verwerken in mijn eigen stijl.
+Ik heb de code die ik eerder had geschreven voor de buttons verwerkt waardoor het goed past bij de rest. */ 
+
+.art_1 a {
+	background-color: var(--color-button);
+	padding: .8em 1.5em;
+	border: none;
+	border-radius: 0.3em;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1em;
+	outline: solid 0.2em var(--color-button);
+	color: var(--color-text);
+	display: inline-block;
+	text-decoration: none;
+}
+.art_1 a:is(:hover, :focus) {
+	outline-offset: 0.19em;
+}
+
+.art_2 a {
+	background-color: var(--color-button);
+	padding: .8em 1.5em;
+	border: none;
+	border-radius: 0.3em;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1em;
+	outline: solid 0.2em var(--color-button);
+	color: var(--color-text);
+	display: inline-block;
+	text-decoration: none;
+}
+.art_2 a:is(:hover, :focus) {
+	outline-offset: 0.19em;
+}
+
+.art_3 a {
+	background-color: var(--color-button);
+	padding: .8em 1.5em;
+	border: none;
+	border-radius: 0.3em;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1em;
+	outline: solid 0.2em var(--color-button);
+	color: var(--color-text);
+	display: inline-block;
+	text-decoration: none;
+}
+.art_3 a:is(:hover, :focus) {
+	outline-offset: 0.19em;
+}
+
+/* Einde button animatie */
+
+
+/* .car_img1 a, .car_img2 a, .car_img3 a, .art_1 a, .art_2 a, .art_3 a{
+	background-color: var(--color-button);
+	border-radius: 0.3em;
+	border: none;
+	text-decoration: none;
+	padding: 1em 1.5em;
+	font-size: 1em;
+	display: inline-block;
+	color: var(--color-text);
+} */
+
+/* Dit is de code die ik heb gekopieërd van codepen die ik heb gevonden via DLO.
 Ik heb dit vervolgens aangepast om het werkend te maken voor mijn pagina. */
 
 .header2 a {
@@ -103,6 +169,10 @@ Ik heb dit vervolgens aangepast om het werkend te maken voor mijn pagina. */
 	--link-color:var(--accent-color);
   }
 
+/* .heade1 .dropdown a:disabled{
+	--link-color:var(--accent-color);
+} */
+
 /* Einde code states  */
 
 /* inline-block zorgt ervoor dat de list items naast elkaar komen te staan */
@@ -116,6 +186,18 @@ header section li {
 /* header a:nth-of-type(1) {
     background-color: #ffbc0d;
 } */
+
+header img{
+	width: 8em;
+	height: 8em;
+}
+
+@media (max-width: 1450px) {
+	header img {
+		width: 3em;
+	    height: 3em;
+	}
+}
 
 header a:nth-of-type(1){
 	display: flex;
@@ -187,6 +269,12 @@ header a:nth-of-type(1){
 	padding-left: 0.5em;
 }
 
+@media (max-width: 1450px) {
+	.header1, .header2{
+		display: none;
+	}
+}
+
 header{
 	display: grid;
 	grid-template-columns: 4fr 6fr 6fr;
@@ -195,17 +283,6 @@ header{
 	Ik heb de waardes en kleur van de McDonalds site overgenomen omdat ik er zelf niet uitkwam.*/
 	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
 }/*  Hier eindigt mijn grid voor de header  */
-
-.car_img1 a, .car_img2 a, .car_img3 a, .art_1 a, .art_2 a, .art_3 a{
-	background-color: var(--color-button);
-	border-radius: 0.3em;
-	border: none;
-	text-decoration: none;
-	padding: 1em 1.5em;
-	font-size: 1em;
-	display: inline-block;
-	color: var(--color-text);
-}
 
 h1{
 	color: #fff;
@@ -287,6 +364,13 @@ p {
 	object-fit: cover;
 	grid-area: 3/4/15/16;
 }
+
+/* @media (max-width: 1450px) {
+	.car_img1 img {
+		width: 70%;
+	}
+} */
+
 
 .car_img1 article{
 	position: absolute;
@@ -381,7 +465,7 @@ p {
 .art_3 p:nth-of-type(2) {
 	font-size: 0.01em;
 	width: fit-content;
-	margin-top: 50em;
+	margin-top: 70em;
 	color: #fff;
 }
 

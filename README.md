@@ -316,6 +316,8 @@ Ik hoop dat ik blijf groeien en op een dag mijn eigen site ga kunnen maken zonde
 
 Ik vond zowat alles lastig maar het lastigste vind ik responsiveness. 
 Het werkt allemaal niet zoals ik dat wil en ik weet niet hoe ik dit moet aanpakken.
+De menubalk is redelijk gelukt die was wat simpeler dan de rest. Ik weet nog niet hoe je een icon kan toevoegen.
+Media queries toepassen op grid vind ik lastig en snap soms niet waarom iets niet meeschaalt.
 Ik weet nooit of ik iets de correcte manier doe pas na de feedback weet ik dat dus dat is lastig.
 Ik was later begonnen door te weinig moivitatie waar ik nogsteeds last van heb, maar ik heb mijn best gedaan.
 
@@ -337,5 +339,6 @@ Dit werkte niet helemaal dus ik heb een aantal vragen gesteld aan chatGPT voor h
 7. Codepen states voorbeelden van DLO: https://codepen.io/shooft/pen/KKbweGB
 8. Ik heb vooral hulp gevraagd aan mijn klasgenoot en mijn neef dus daarom heb ik niet veel bronnen.
 Ik ben niet goed in youtube video's gebruiken of google nadoen want ik begrijp het niet op die manier.
+9. Codepen button animation: https://codepen.io/MansiRamtekkar/pen/VwELyPN
 
 </details>
