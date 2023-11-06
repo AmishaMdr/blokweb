@@ -37,13 +37,126 @@ link naar de website die ik ga namaken: (https://www.mcdonalds.com/nl/nl-nl/full
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-hier de naam van de pagina  
+Homepagina McDonald's
  <img src="readme-images/pagina_1.png" width="375px" alt="pagina met de homepage erop">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-hier de naam van de pagina  
- <img src="readme-images/pagina_2.png" width="375px" alt="pagina met details over eten">
+Menu pagina McDonald's
+ <img src="readme-images/pagina_2.png" width="375px" alt="pagina met menu">
+
+</details>
+
+## Mijn proces
+
+<details open>
+  <summary>Proces van mijn website</summary>
+
+### Homepage:
+
+ <img src="readme-images/ss_24.png" width="375px" alt="Content pagina">
+Dit is mijn homepagina tot nu toe. Dit is content wat ik erin heb gezet en ik ga daarna aan de slag met vormgeving css.
+Ik heb hier al een grid toegepast voor mijn header in 3 delen waardoor het mooi naast elkaar staat. 
+Ik heb dit gedaan met behulp van de studentassistent. Ik vond dit zelf nog te lastig om te doen. 
+Verder heb ik hier al de buttons vormgegeven. 
+
+### Carousel afbeelding 1:
+
+ <img src="readme-images/ss_21.png" width="375px" alt="carousel pagina">
+Hier had ik een poging gedaan tot vormgeving voor de eerste slide van de carousel. 
+Het was lastig om uit te vogelen hoe je de lagen op elkaar krijgt.
+Er zijn veel verschillende manieren om dit te doen dus ik moest navragen hoe ik dit precies moest doen.
+Ik heb dit uiteindelijk met een grid gedaan. Het was erg lastig maar met wat hulp kwam ik er wel.
+Door met grid te werken begrijp ik wat beter hoe het werkt.
+
+### Carousel afbeelding en homepage:
+
+ <img src="readme-images/ss_20.png" width="375px" alt="carousel en pagina">
+Hier heb ik gewerkt aan de vormgeving van de hele pagina. De header ziet er al netter uit en je ziet weer de afbeelding met tekst erop.
+Ik heb de artikelen eronder precies dezelfde grid gegeven zodat het precies onder elkaar kan staan.
+Ik moest nog wel spelen met de gap tussen de artikelen maar dat was wel gelukt. 
+Met grid werken is niet echt makkelijk, maar het ziet er wel goed uit als je het eenmaal doorhebt.
+
+### Onderkant homepage:
+
+ <img src="readme-images/ss_9.png" width="375px" alt="onderkant homepage">
+Hier zie je nogmaals het grid wat ik heb gemaakt. Elke rij met artikelen waren net ietsje anders niet heel erg anders.
+Het is erg vergelijkbaar met de McDonald's site door de grid dus dat is erg goed gelukt.
+Ik ben zelf wel blij met het resultaat
+
+### footer homepage:
+
+ <img src="readme-images/ss_22.png" width="375px" alt="footer homepage">
+Ik vind dat de footer super goed gelukt is. De layout is precies hoe ik het wil.
+Ik heb ook geleerd hoe je werkt met nth of type waardoor ik de eerste li uit de ul kon aanspreken.
+Dat zou me eerst nooit lukken dus daar ben ik blij mee.
+Het ziet er naar mijn mening uit zoals op de McDonald's site dus daar ga ik niet meer aan zitten.
+
+### footer homepage:
+
+ <img src="readme-images/ss_22.png" width="375px" alt="footer homepage">
+Ik vind dat de footer super goed gelukt is. De layout is precies hoe ik het wil.
+Ik heb ook geleerd hoe je werkt met nth of type waardoor ik de eerste li uit de ul kon aanspreken.
+Dat zou me eerst nooit lukken dus daar ben ik blij mee.
+Het ziet er naar mijn mening uit zoals op de McDonald's site dus daar ga ik niet meer aan zitten.
+
+### Menu pagina:
+
+ <img src="readme-images/ss_22.png" width="375px" alt="menu pagina">
+Ik heb zoals bij de eerste pagina eerst mijn content erin gezet voordat ik css aanpas. 
+Ik heb een apart css bestand aangemaakt om overzicht te houden.
+Ik had na mijn feedback begrepen dat deze pagina te weinig elementen heeft dus ik ga de menu pagina maken.
+Deze heeft een interessantere layout dan de details pagina omdat er vrij weinig te zien is.
+
+ <img src="readme-images/ss_18.png" width="375px" alt="navigatie menu">
+  <img src="readme-images/ss_17.png" width="375px" alt="navigatie menu flexbox">
+   <img src="readme-images/ss_19.png" width="375px" alt="navigatie menu flexbox">
+    <img src="readme-images/ss_16.png" width="375px" alt="navigatie menu flexbox resultaat">
+Ik ging hierna door met de navigatie wat je kan zien in de afbeeldingen.
+Om het precies zo na te maken was wel een ding omdat ik nog niet goed ben met flexbox en grid.
+Ik wist niet eens dat je die twee kon combineren. Ik vroeg om hulp en daarna lukte het wel.
+Ik begrijp nu veel beter hoe flexbox werkt en hoe je grid kan combineren met flexbox.
+
+ <img src="readme-images/ss_15.png" width="375px" alt="Menu items">
+  <img src="readme-images/ss_14.png" width="375px" alt="Menu items">
+Ik wilde de rode lijn zowel voor mijn navigatie als voor mijn header.
+Ik wist nog niet precies hoe je de lengte goed kreeg en precies op de onderste border kreeg. 
+Dit is uiteindelijk wel gelukt. Het maakt de pagina wel duidelijker en af.
+
+
+ <img src="readme-images/ss_13.png" width="375px" alt="Menu items">
+Ik ging door naar de items op het menu. Ik vond het nog lastig om grid te gebruiken 
+en ik wist niet hoe je naast flexbox navigatie uberhaupt nog grid kon gebruiken.
+Ik heb dit uiteindelijk toch kunne doen met flexbox en het is gelukt zoals ik dat wilde.
+
+ <img src="readme-images/ss_11.png" width="375px" alt="Menu items">
+Dit is de hele menu pagina geworden. 
+Ik heb afbeeldingen hergebruikt zodat ik het sneller kan uploaden naar github.
+Ik ben er tevreden mee. 
+Eerlijk gezegd vergeet ik snel wat ik precies gedaan heb om dingen te bereiken nadat ik het gedaan heb, 
+maar ik kan altijd nog terug kijken om het opnieuw te doen.
+Dat is het lastige aan coderen voor mij nadat ik het doe ben ik vergeten wat ik gedaan heb.
+
+ <img src="readme-images/ss_5.png" width="375px" alt="Accessability">
+  <img src="readme-images/ss_1.png" width="375px" alt="Accessability">
+Ik moest mijn accessability verbeteren omdat <h4 hidden> niet werkte.
+Je ziet het niet, maar het wordt ook niet voorgelezen door de screenreader en daar hebben we dus niks aan. 
+Niks anders werkte en ik wist niet hoe ik dit moest aanpakken. 
+Een klasgenoot zei toen iets in de richting van 
+'Ik weet niet of dit correct is maar je kan ook gewoon de tekst wit maken en dan wordt het sowieso voorgelezen.'
+Ik vond dit niet eens zo'n slecht idee dus dat is dan ook wat ik heb geprobeerd. 
+Eerst had ik het aan de kant gezet met margin maar hij sprong daar naartoe als de screenreader aan het lezen was en dat is niet goed.
+Ik heb dus mijn tekst klein gemaakt en vervolgens wit gemaakt zodat het de layout niet verstoort en je het niet ziet.
+Na de test met de screenreader was het voor mij duidelijk wat waar was en waarvoor knoppen en linkjes zijn.
+
+ <img src="readme-images/ss_3.png" width="375px" alt="States">
+  <img src="readme-images/ss_3.png" width="375px" alt="States">
+Ik wilde nog states toevoegen om het echt af te maken.
+Ik koos voor de rode onderlijning omdat dit past bij de site en ze gebruikte eerder al de rode lijnen wat we op de menu pagina zagen.
+Ik vind dit er wel goed uitzien. 
+De lijn is dichterbij de secundaire menu dan bij de main menu. Ik vind dat wel een leuk effect hebben.
+Het heeft ook een animatie wat het interessanter maakt. Ik heb dit gekopieërd en aangepast van codepen via DLO.
+Ik heb de code doorgenomen om te begrijpen wat er gebeurd. 
 
 </details>
 
@@ -98,18 +211,6 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 Ik vond de elementen aanspreken zonder classes en id lastig. Ik ken geen andere selectoren dus dat ga ik nog navragen.
 Alle content in mijn html zetten ging wel goed. Verder ken ik qua css niet veel over grid, layout etc dus daar ga ik mee oefenen.
 
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-(Hebben we niet gedaan.)
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -131,18 +232,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 Ik had moeite met de selectoren en flexbox. De basics zijn weggevallen waardoor het lastig is om door te gaan als ik vastloop.
-
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-(Hebben we niet gedaan.)
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
@@ -169,6 +258,7 @@ De resultaten van de toegankelijkheidstesten:
 
   <img src="readme-images/WCAg.png" alt="WCAg checklist test">
 
+
 Mijn bevindingen uit de testen:
 
 - Sommige onderdelen komen niet voor in mijn site zoals video of telefoon formaat omdat ik responsive doe. 
@@ -194,18 +284,6 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 Aanspreken van elementen gaat al een stuk beter. Ik vind het nog lastig om mijn site responsive te maken. 
 Mijn logo werkt niet mee als ik het een width geef. Ik werd daardoor ontmoedigd om door te gaan met responsiveness maar ik ga nog een poging doen.
 Grid is soms ook lastig ik kan het nu wel maken, maar het aanpassen vind ik nog eng omdat ik bang ben dat het stuk gaat.
-
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-(Hebben we niet gedaan.)
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
