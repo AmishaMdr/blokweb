@@ -108,6 +108,8 @@ Ik heb een apart css bestand aangemaakt om overzicht te houden.
 Ik had na mijn feedback begrepen dat deze pagina te weinig elementen heeft dus ik ga de menu pagina maken.
 Deze heeft een interessantere layout dan de details pagina omdat er vrij weinig te zien is.
 
+### Navigatie pagina:
+
  <img src="readme-images/ss_18.png" width="375px" alt="navigatie menu">
   <img src="readme-images/ss_17.png" width="375px" alt="navigatie menu flexbox">
    <img src="readme-images/ss_19.png" width="375px" alt="navigatie menu flexbox">
@@ -117,25 +119,32 @@ Om het precies zo na te maken was wel een ding omdat ik nog niet goed ben met fl
 Ik wist niet eens dat je die twee kon combineren. Ik vroeg om hulp en daarna lukte het wel.
 Ik begrijp nu veel beter hoe flexbox werkt en hoe je grid kan combineren met flexbox.
 
- <img src="readme-images/ss_15.png" width="375px" alt="Menu items">
-  <img src="readme-images/ss_14.png" width="375px" alt="Menu items">
+### Rode lijn:
+
+ <img src="readme-images/ss_15.png" width="375px" alt="rode lijn">
+  <img src="readme-images/ss_14.png" width="375px" alt="rode lijn">
 Ik wilde de rode lijn zowel voor mijn navigatie als voor mijn header.
 Ik wist nog niet precies hoe je de lengte goed kreeg en precies op de onderste border kreeg. 
 Dit is uiteindelijk wel gelukt. Het maakt de pagina wel duidelijker en af.
 
+### Menu items:
 
  <img src="readme-images/ss_13.png" width="375px" alt="Menu items">
 Ik ging door naar de items op het menu. Ik vond het nog lastig om grid te gebruiken 
 en ik wist niet hoe je naast flexbox navigatie uberhaupt nog grid kon gebruiken.
 Ik heb dit uiteindelijk toch kunne doen met flexbox en het is gelukt zoals ik dat wilde.
 
- <img src="readme-images/ss_11.png" width="375px" alt="Menu items">
+### Resultaat menu pagina:
+
+ <img src="readme-images/ss_11.png" width="375px" alt="Menu pagina">
 Dit is de hele menu pagina geworden. 
 Ik heb afbeeldingen hergebruikt zodat ik het sneller kan uploaden naar github.
 Ik ben er tevreden mee. 
 Eerlijk gezegd vergeet ik snel wat ik precies gedaan heb om dingen te bereiken nadat ik het gedaan heb, 
 maar ik kan altijd nog terug kijken om het opnieuw te doen.
 Dat is het lastige aan coderen voor mij nadat ik het doe ben ik vergeten wat ik gedaan heb.
+
+### Accesability verbeteren:
 
  <img src="readme-images/ss_5.png" width="375px" alt="Accessability">
   <img src="readme-images/ss_1.png" width="375px" alt="Accessability">
@@ -148,6 +157,8 @@ Ik vond dit niet eens zo'n slecht idee dus dat is dan ook wat ik heb geprobeerd.
 Eerst had ik het aan de kant gezet met margin maar hij sprong daar naartoe als de screenreader aan het lezen was en dat is niet goed.
 Ik heb dus mijn tekst klein gemaakt en vervolgens wit gemaakt zodat het de layout niet verstoort en je het niet ziet.
 Na de test met de screenreader was het voor mij duidelijk wat waar was en waarvoor knoppen en linkjes zijn.
+
+### States:
 
  <img src="readme-images/ss_3.png" width="375px" alt="States">
   <img src="readme-images/ss_3.png" width="375px" alt="States">
