@@ -179,7 +179,7 @@ Ik heb de code doorgenomen om te begrijpen wat er gebeurd.
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
 ### Bevindingen
@@ -296,13 +296,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/ss_25" width="375px" alt="uitomst opdracht">
-    <img src="readme-images/ss_26" width="375px" alt="uitomst opdracht">
+  <img src="readme-images/ss_25.png" width="375px" alt="uitomst opdracht home pagina">
+    <img src="readme-images/ss_26.png" width="375px" alt="uitomst opdracht menu pagina">
 
 ### Dit ging goed/Heb ik geleerd:
 
