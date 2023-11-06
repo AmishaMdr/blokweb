@@ -38,11 +38,13 @@ link naar de website die ik ga namaken: (https://www.mcdonalds.com/nl/nl-nl/full
 #### Screenshot(s) van de eerste pagina (small screen):
 
 Homepagina McDonald's
+
  <img src="readme-images/pagina_1.png" width="375px" alt="pagina met de homepage erop">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 Menu pagina McDonald's
+
  <img src="readme-images/pagina_2.png" width="375px" alt="pagina met menu">
 
 </details>
@@ -55,6 +57,7 @@ Menu pagina McDonald's
 ### Homepage:
 
  <img src="readme-images/ss_24.png" width="375px" alt="Content pagina">
+
 Dit is mijn homepagina tot nu toe. Dit is content wat ik erin heb gezet en ik ga daarna aan de slag met vormgeving css.
 Ik heb hier al een grid toegepast voor mijn header in 3 delen waardoor het mooi naast elkaar staat. 
 Ik heb dit gedaan met behulp van de studentassistent. Ik vond dit zelf nog te lastig om te doen. 
@@ -63,6 +66,7 @@ Verder heb ik hier al de buttons vormgegeven.
 ### Carousel afbeelding 1:
 
  <img src="readme-images/ss_21.png" width="375px" alt="carousel pagina">
+
 Hier had ik een poging gedaan tot vormgeving voor de eerste slide van de carousel. 
 Het was lastig om uit te vogelen hoe je de lagen op elkaar krijgt.
 Er zijn veel verschillende manieren om dit te doen dus ik moest navragen hoe ik dit precies moest doen.
@@ -72,6 +76,7 @@ Door met grid te werken begrijp ik wat beter hoe het werkt.
 ### Carousel afbeelding en homepage:
 
  <img src="readme-images/ss_20.png" width="375px" alt="carousel en pagina">
+
 Hier heb ik gewerkt aan de vormgeving van de hele pagina. De header ziet er al netter uit en je ziet weer de afbeelding met tekst erop.
 Ik heb de artikelen eronder precies dezelfde grid gegeven zodat het precies onder elkaar kan staan.
 Ik moest nog wel spelen met de gap tussen de artikelen maar dat was wel gelukt. 
@@ -80,6 +85,7 @@ Met grid werken is niet echt makkelijk, maar het ziet er wel goed uit als je het
 ### Onderkant homepage:
 
  <img src="readme-images/ss_9.png" width="375px" alt="onderkant homepage">
+
 Hier zie je nogmaals het grid wat ik heb gemaakt. Elke rij met artikelen waren net ietsje anders niet heel erg anders.
 Het is erg vergelijkbaar met de McDonald's site door de grid dus dat is erg goed gelukt.
 Ik ben zelf wel blij met het resultaat
@@ -87,14 +93,7 @@ Ik ben zelf wel blij met het resultaat
 ### footer homepage:
 
  <img src="readme-images/ss_22.png" width="375px" alt="footer homepage">
-Ik vind dat de footer super goed gelukt is. De layout is precies hoe ik het wil.
-Ik heb ook geleerd hoe je werkt met nth of type waardoor ik de eerste li uit de ul kon aanspreken.
-Dat zou me eerst nooit lukken dus daar ben ik blij mee.
-Het ziet er naar mijn mening uit zoals op de McDonald's site dus daar ga ik niet meer aan zitten.
 
-### footer homepage:
-
- <img src="readme-images/ss_22.png" width="375px" alt="footer homepage">
 Ik vind dat de footer super goed gelukt is. De layout is precies hoe ik het wil.
 Ik heb ook geleerd hoe je werkt met nth of type waardoor ik de eerste li uit de ul kon aanspreken.
 Dat zou me eerst nooit lukken dus daar ben ik blij mee.
@@ -102,7 +101,8 @@ Het ziet er naar mijn mening uit zoals op de McDonald's site dus daar ga ik niet
 
 ### Menu pagina:
 
- <img src="readme-images/ss_22.png" width="375px" alt="menu pagina">
+ <img src="readme-images/ss_23.png" width="375px" alt="menu pagina">
+
 Ik heb zoals bij de eerste pagina eerst mijn content erin gezet voordat ik css aanpas. 
 Ik heb een apart css bestand aangemaakt om overzicht te houden.
 Ik had na mijn feedback begrepen dat deze pagina te weinig elementen heeft dus ik ga de menu pagina maken.
@@ -114,6 +114,7 @@ Deze heeft een interessantere layout dan de details pagina omdat er vrij weinig 
   <img src="readme-images/ss_17.png" width="375px" alt="navigatie menu flexbox">
    <img src="readme-images/ss_19.png" width="375px" alt="navigatie menu flexbox">
     <img src="readme-images/ss_16.png" width="375px" alt="navigatie menu flexbox resultaat">
+
 Ik ging hierna door met de navigatie wat je kan zien in de afbeeldingen.
 Om het precies zo na te maken was wel een ding omdat ik nog niet goed ben met flexbox en grid.
 Ik wist niet eens dat je die twee kon combineren. Ik vroeg om hulp en daarna lukte het wel.
@@ -123,6 +124,7 @@ Ik begrijp nu veel beter hoe flexbox werkt en hoe je grid kan combineren met fle
 
  <img src="readme-images/ss_15.png" width="375px" alt="rode lijn">
   <img src="readme-images/ss_14.png" width="375px" alt="rode lijn">
+
 Ik wilde de rode lijn zowel voor mijn navigatie als voor mijn header.
 Ik wist nog niet precies hoe je de lengte goed kreeg en precies op de onderste border kreeg. 
 Dit is uiteindelijk wel gelukt. Het maakt de pagina wel duidelijker en af.
@@ -130,6 +132,7 @@ Dit is uiteindelijk wel gelukt. Het maakt de pagina wel duidelijker en af.
 ### Menu items:
 
  <img src="readme-images/ss_13.png" width="375px" alt="Menu items">
+
 Ik ging door naar de items op het menu. Ik vond het nog lastig om grid te gebruiken 
 en ik wist niet hoe je naast flexbox navigatie uberhaupt nog grid kon gebruiken.
 Ik heb dit uiteindelijk toch kunne doen met flexbox en het is gelukt zoals ik dat wilde.
@@ -137,6 +140,7 @@ Ik heb dit uiteindelijk toch kunne doen met flexbox en het is gelukt zoals ik da
 ### Resultaat menu pagina:
 
  <img src="readme-images/ss_11.png" width="375px" alt="Menu pagina">
+
 Dit is de hele menu pagina geworden. 
 Ik heb afbeeldingen hergebruikt zodat ik het sneller kan uploaden naar github.
 Ik ben er tevreden mee. 
@@ -148,7 +152,8 @@ Dat is het lastige aan coderen voor mij nadat ik het doe ben ik vergeten wat ik 
 
  <img src="readme-images/ss_5.png" width="375px" alt="Accessability">
   <img src="readme-images/ss_1.png" width="375px" alt="Accessability">
-Ik moest mijn accessability verbeteren omdat <h4 hidden> niet werkte.
+
+Ik moest mijn accessability verbeteren omdat h4 hidden niet werkte.
 Je ziet het niet, maar het wordt ook niet voorgelezen door de screenreader en daar hebben we dus niks aan. 
 Niks anders werkte en ik wist niet hoe ik dit moest aanpakken. 
 Een klasgenoot zei toen iets in de richting van 
@@ -162,6 +167,7 @@ Na de test met de screenreader was het voor mij duidelijk wat waar was en waarvo
 
  <img src="readme-images/ss_3.png" width="375px" alt="States">
   <img src="readme-images/ss_3.png" width="375px" alt="States">
+
 Ik wilde nog states toevoegen om het echt af te maken.
 Ik koos voor de rode onderlijning omdat dit past bij de site en ze gebruikte eerder al de rode lijnen wat we op de menu pagina zagen.
 Ik vind dit er wel goed uitzien. 
@@ -169,7 +175,7 @@ De lijn is dichterbij de secundaire menu dan bij de main menu. Ik vind dat wel e
 Het heeft ook een animatie wat het interessanter maakt. Ik heb dit gekopieërd en aangepast van codepen via DLO.
 Ik heb de code doorgenomen om te begrijpen wat er gebeurd. 
 
-</details>
+</details open>
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
@@ -191,28 +197,9 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 </details>
 
-## Breakdownschets (week 1)
-
-<details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
-
-### de hele pagina:
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu):
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter):
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
-</details>
-
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
 ### Stand van zaken
@@ -235,7 +222,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
 ### Stand van zaken
@@ -258,7 +245,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
 ### Bevindingen
@@ -285,7 +272,7 @@ Ik heb linkjes dus a elementen gebruikt als button omdat mij dat werd aangeraden
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
 ### Stand van zaken
@@ -314,20 +301,23 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/ss_25" width="375px" alt="uitomst opdracht">
+    <img src="readme-images/ss_26" width="375px" alt="uitomst opdracht">
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Ik heb geleerd om te werken met flexbox, grid, css en hoe je elementen moet anspreken zonder classes en id's.
+Ik heb nog veel meer geleerd, maar dat zijn basis dingen die ik niet onder de knie had.
+Ik moet nog veel leren en ik ben bereid om dat te doen in mijn eigen tijd.
+Ik kan nu al veel meer dan ik ooit dacht te kunnen.
+Ik hoop dat ik blijf groeien en op een dag mijn eigen site ga kunnen maken zonder constant hulp te hoeven vragen.
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+Ik vond zowat alles lastig maar het lastigste vind ik responsiveness. 
+Het werkt allemaal niet zoals ik dat wil en ik weet niet hoe ik dit moet aanpakken.
+Ik weet nooit of ik iets de correcte manier doe pas na de feedback weet ik dat dus dat is lastig.
+Ik was later begonnen door te weinig moivitatie waar ik nogsteeds last van heb, maar ik heb mijn best gedaan.
 
 ## Bronnenlijst
 
