@@ -1,30 +1,19 @@
 // JavaScript Document
-console.log("HelloWorld");
+console.log("hi");
 
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
-  const menu = document.querySelector('.menu');
-const menu2 = document.querySelector('.menu2');
-
-// Functie om het hamburgermenu te tonen/verbergen op basis van schermgrootte
-function toggleMenuVisibility() {
-    if (window.innerWidth <= 700) {
-        menu.style.display = 'none';
-        menu2.style.display = 'block';
-    } else {
-        menu.style.display = 'block';
-        menu2.style.display = 'none';
-    }
-}
-
-// Voer de functie uit wanneer de pagina laadt en wanneer het schermformaat wijzigt
-window.onload = toggleMenuVisibility;
-window.onresize = toggleMenuVisibility;
+// Begin dropdown menu js code 
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownItems = document.querySelectorAll('.header1 ul:nth-of-type(2) li');
+    
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            const dropdown = this.querySelector('.dropdown');
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+            }
+            event.stopPropagation();
+        });
+    });
+});
+// Einde dropdown menu js code 
 
