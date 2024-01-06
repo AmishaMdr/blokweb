@@ -1,665 +1,506 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
+/* :root {
 	--color-text:#111;
-	--color-background:#fff;
-	--color-button: #ffbc0d;
-	--font-family: Helvetica, Arial, sans-serif;
-	--accent-color: rgb(206, 20, 20);
-}
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-html{
-	font-family:var(--font-family);
-}
-
-/* Begin button animatie. Dit is de code die ik heb gekopieërd van codepen en heb aangepast. 
-Ik wist wat de elementen deden waardoor ik het makkelijk kon verwerken in mijn eigen stijl.
-Ik heb de code die ik eerder had geschreven voor de buttons verwerkt waardoor het goed past bij de rest. */ 
-
-.art_1 a {
-	background-color: var(--color-button);
-	padding: .8em 1.5em;
-	border: none;
-	border-radius: 0.3em;
-	font-family: "Work Sans", sans-serif;
-	font-size: 1em;
-	outline: solid 0.2em var(--color-button);
-	color: var(--color-text);
-	display: inline-block;
-	text-decoration: none;
-}
-.art_1 a:is(:hover, :focus) {
-	outline-offset: 0.19em;
-}
-
-.art_2 a {
-	background-color: var(--color-button);
-	padding: .8em 1.5em;
-	border: none;
-	border-radius: 0.3em;
-	font-family: "Work Sans", sans-serif;
-	font-size: 1em;
-	outline: solid 0.2em var(--color-button);
-	color: var(--color-text);
-	display: inline-block;
-	text-decoration: none;
-}
-.art_2 a:is(:hover, :focus) {
-	outline-offset: 0.19em;
-}
-
-.art_3 a {
-	background-color: var(--color-button);
-	padding: .8em 1.5em;
-	border: none;
-	border-radius: 0.3em;
-	font-family: "Work Sans", sans-serif;
-	font-size: 1em;
-	outline: solid 0.2em var(--color-button);
-	color: var(--color-text);
-	display: inline-block;
-	text-decoration: none;
-}
-.art_3 a:is(:hover, :focus) {
-	outline-offset: 0.19em;
-}
-
-/* Einde button animatie */
-
-
-/* .car_img1 a, .car_img2 a, .car_img3 a, .art_1 a, .art_2 a, .art_3 a{
-	background-color: var(--color-button);
-	border-radius: 0.3em;
-	border: none;
-	text-decoration: none;
-	padding: 1em 1.5em;
-	font-size: 1em;
-	display: inline-block;
-	color: var(--color-text);
+	--color-text2: #eee;
+	--color-background:#eee;
+	--color-button: #F1C50E;
+	--color-footer: #99A49B;
+	--color-body: #CBDAD1;
+	--color-header: #2A626F;
 } */
 
-/* Dit is de code die ik heb gekopieërd van codepen die ik heb gevonden via DLO.
-Ik heb dit vervolgens aangepast om het werkend te maken voor mijn pagina. */
-
-.header2 a {
-	position: relative;
-	text-decoration:none;
-	transition:color .5s;
-  }
-  
-.header2 a::after {
-	content:"";
-	position:absolute;
-	left:0;
-	right:0;
-	top:100%;
-	height:.2em;
-	background-color:var(--accent-color);
-  
-	  /* initieel horizontaal helemaal plat */
-	transform:scaleX(0);
-	transition:transform .5s;
-  }
-  
-  /* hover en focus */
-.header2 a:is(:hover, :focus-visible)::after {
-	  /* nu horizontaal de hele breedte */
-	transform:scaleX(1);
-  }
-  
-  /* active */
-.header2 a:active {
-	--link-color:var(--accent-color);
-  }
-
-/* Begin states van de main header */
-
-  .header1 a {
-	position: relative;
-  
-	text-decoration:none;
-  
-	transition:color .5s;
-  }
-  
-.header1 a::after {
-	content:"";
-	position:absolute;
-	left:0;
-	right:0;
-	top:100%;
-	height:.2em;
-	background-color:var(--accent-color);
-  
-	  /* initieel horizontaal helemaal plat */
-	transform:scaleX(0);
-	transition:transform .5s;
-  }
-  
-  /* hover en focus */
-.header1 a:is(:hover, :focus-visible)::after {
-	  /* nu horizontaal de hele breedte */
-	transform:scaleX(1);
-  }
-  
-  /* active */
-.header1 a:active {
-	--link-color:var(--accent-color);
-  }
-
-/* .heade1 .dropdown a:disabled{
-	--link-color:var(--accent-color);
-} */
-
-/* Einde code states  */
-
-/* inline-block zorgt ervoor dat de list items naast elkaar komen te staan */
-header section li {
-	display: inline-block;
-	position: relative;
-	list-style: none;
-	padding: 0;
+:root {
+	--color-text:#111;
+	--color-text2: #eee;
+	--color-background:#FFF;
+	--color-button: #F1C50E;
+	/* --color-footer: #7a9c81; */
+	--color-footer: #99A49B;
+	--color-body: #eee;
+	--color-body2: #CBDAD1;
+	--color-header: #2A626F;
 }
 
-/* header a:nth-of-type(1) {
-    background-color: #ffbc0d;
-} */
-
-header img{
-	width: 8em;
-	height: 8em;
-}
-
-@media (max-width: 1450px) {
-	header img {
-		width: 3em;
-	    height: 3em;
-	}
-}
-
-header a:nth-of-type(1){
-	display: flex;
-	justify-content: end;
-	padding-right: 2em;
-}
-
-.header1 a, 
-.header2 a, 
-.dropdown a, 
-.footer_nav a, 
-.footer_nav2 a{
-	text-decoration: 0;
-	color: #111;
-}
-
-.header1 ul:nth-of-type(1) a:nth-of-type(1){
-	font-size: 0.9em;
-	font-weight: lighter;
-}
-
-.header1 ul:nth-of-type(2) a:nth-of-type(1){
-	font-size: 1em;
-	padding: 1.5em 1em 1em 1em;
-	display: block;
-}
-
-/* Begin popup nav header */
-.header1 ul:nth-of-type(2) .dropdown li img{
-	margin-left: 10ch;
-}
-
-.header1 ul:nth-of-type(2) .dropdown li{
-	display: inline-flex;
-	align-items: center;
-	width: min-content;
-	margin-top: 2ch;
-}
-
-.header1 ul:nth-of-type(2) .dropdown{
-	width: 45vw;
-	background-color: var(--color-background);
-	position: absolute;
-	z-index: 2;
-	display: inline-block;
-	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
-	margin-top: 2ch;
-	padding: 0;
-}
-
-.header1 ul:nth-of-type(2) .dropdown li:last-of-type a{
-	width: 21ch;
-	margin-left: 35ch;
-	margin-bottom: 5ch;
-	border: .01em solid black;
-	text-decoration: 0;
-	padding: 1em;
-	border-radius: .3em;
-	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
-}/* Einde popup nav header */
-
-.header2 ul{
-	padding-left: 8em;
-	font-size: 0.9em;
-	font-weight: lighter;
-}
-
-.header2 ul:nth-of-type(1) a:nth-of-type(1){
-	padding-left: 0.5em;
-}
-
-@media (max-width: 1450px) {
-	.header1, .header2{
-		display: none;
-	}
-}
-
-header{
-	display: grid;
-	grid-template-columns: 4fr 6fr 6fr;
-	/* box-shadow zorgt voor een box met schaduw wat de header afscheidt van de body.
-	De eerste vier cijfers zijn de waardes voor de schaduw en de rgba staat voor de kleur.
-	Ik heb de waardes en kleur van de McDonalds site overgenomen omdat ik er zelf niet uitkwam.*/
-	box-shadow: 0 0.06em 0.5em 0 rgba(0,0,0,.06);
-}/*  Hier eindigt mijn grid voor de header  */
-
-h1{
-	color: #fff;
-	font-size: 0.01em;
-	width: fit-content;
-}
-
-h2{
-    font-size: 3.5ch;
+/* Code algemeen */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--color-body2);
 	margin: 0;
 }
 
-h3 {
-	font-weight: lighter;
-	font-size: 2.5ch;
-}
-
-h4 {
-	font-size: 0.01em;
-	width: 0.01em;
-	color: #fff;
-}
-
-p {
-	padding-bottom: 0.5em;
-	font-weight: lighter;
-	line-height: 1.5em;
-}
-
-/* Styling van de carousel */
-.container {
-	width: 73em;
-	height: 33em;
-	overflow-y: hidden;
-	overflow-x: auto;
-	display: flex;
-	margin-left: 17%;
-	margin-top: 5%;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-}
-
-.container img{
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	scroll-snap-align: start;
-}
-
-.car_nav p {
-	font-size: 0.01em;
-	color: #fff;
-	margin-left: 170em;
-}
-
-.car_nav {
-	z-index: 2;
-	position: absolute;
-	display: flex;
-	margin-left: 45%;
-	margin-top: 1.5%;
-}
-
-.car_nav a {
-	background-color: rgb(214, 212, 212);
-	border-radius: 50%;
-	display: inline-flex;
-	text-decoration: 0;
-	cursor: pointer;
-	margin-right: 5ch;
-	height: 3ch;
-	width: 3ch;
-}/* Einde styling carousel */
-
-/* Hier plaats ik mijn eerste image op een grid  */
-.car_img1 img{
-	z-index: 1;
+img {
 	width: 100%;
-	object-fit: cover;
-	grid-area: 3/4/15/16;
 }
 
-/* @media (max-width: 1450px) {
-	.car_img1 img {
-		width: 70%;
-	}
-} */
-
-
-.car_img1 article{
-	position: absolute;
-	object-fit: cover;
-	background-color: var(--color-background);
-	grid-area: 5/5/14/9;
-	border-radius: 0.5em;
-	padding: 2em;
-}
-
-.car_img1 h2{
-	width: 70%;
-	color: rgb(37, 37, 37);
-	font-size: 3.5ch;
-	font-weight: bolder;
-}
-
-.car_img1{
-	z-index: 1;
-	position: absolute;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-}/* Hier eindigt de grid voor mijn eerste afbeelding */
-
-/* Hier plaats ik mijn eerste image op een grid  */
-.car_img2 img{
-	width: 100%;
-	object-fit: cover;
-	grid-area: 3/4/15/16;
-}
-
-.car_img2 article{
-	position: absolute;
-	object-fit: cover;
-	background-color: var(--color-background);
-	grid-area: 5/5/14/9;
-	border-radius: 0.5em;
-	padding: 2em;
-}
-
-.car_img2 h2{
-	width: 70%;
-	color: rgb(37, 37, 37);
-	font-size: 3.5ch;
-	font-weight: bolder;
-}
-
-.car_img2{
-	z-index: 1;
-	position: absolute;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-}/* Hier eindigt de grid voor mijn eerste afbeelding */
-
-/* Hier plaats ik mijn eerste image op een grid  */
-.car_img3 img{
-	width: 100%;
-	object-fit: cover;
-	grid-area: 3/4/15/16;
-}
-
-.car_img3 article{
-	position: absolute;
-	object-fit: cover;
-	background-color: var(--color-background);
-	grid-area: 5/5/14/9;
-	border-radius: 0.5em;
-	padding: 2em;
-}
-
-.car_img3 h2{
-	width: 70%;
-	color: rgb(37, 37, 37);
-	font-size: 3.5ch;
-	font-weight: bolder;
-}
-
-.car_img3{
-	z-index: 1;
-	position: absolute;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-}/* Hier eindigt de grid voor mijn eerste afbeelding */
-
-/* .art_1, .art_2, .art_3 */
-
-.art_1 p:nth-of-type(2), 
-.art_2 p:nth-of-type(2),
-.art_3 p:nth-of-type(2) {
-	font-size: 0.01em;
-	width: fit-content;
-	margin-top: 70em;
-	color: #fff;
-}
-
-/* Zo spreek je de 3 articles binnen een section aan om ze op de juiste grid positie te zetten */
-.art_1 article:nth-of-type(1) {
-	width: 100%;
-	object-fit: cover;
-	grid-area: 1/4/2/8;
-}
-
-.art_1 article:nth-of-type(2) {
-	width: 100%;
-	object-fit: cover;
-	grid-area: 1/8/2/12;
-}
-
-.art_1 article:nth-of-type(3) {
-	width: 100%;
-	object-fit: cover;
-	grid-area: 1/12/2/16;
-}
-
-.art_1 {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	column-gap: 2ch;
-	padding-bottom: 15ch;
-	padding-top: 15ch;
-}/* Hier eindigt de grid voor section 3 */
-
-/* Hier spreek ik de volgende 2 articles aan  */
-.art_2 article:nth-of-type(1) {
-	width: 100%;
-	object-fit: cover;
-	grid-area: 1/4/2/10;
-}
-
-.art_2 article:nth-of-type(2) {
-	width: 100%;
-	object-fit: cover;
-	grid-area: 1/10/2/16;
-}
-
-.art_2 {
-	position:relative;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	column-gap: 2ch;
-	padding-bottom: 15ch;
-}/* Hier eindigt de grid voor section 4 */
-
-/* Hier spreek ik de volgende 2 articles aan  */
-.art_3 article:nth-of-type(1) {
-	width: 99%;
-	object-fit: cover;
-	grid-area: 1/4/2/10;
-	border-style: solid;
-	border-width: 0.1ch;
-	border-color: darkgrey;
-	border-radius: 0.5ch;
-}
-
-.art_3 article:nth-of-type(2) {
-	width: 99%;
-	object-fit: cover;
-	grid-area: 1/10/2/16;
-	border-style: solid;
-	border-width: 0.1ch;
-	border-color: darkgrey;
-	border-radius: 0.5ch;
-}
-
-.art_3 h2{
-    margin-left: 1em;
-    margin-top: 0.5em;
-}
-
-.art_3 p{
-	margin-left: 2em;
-}
-
-.art_3 article:nth-of-type(1) a:nth-of-type(1){
-	margin-left: 2em;
-	margin-top: 2em;
-}
-
-.art_3 article:nth-of-type(2) a:nth-of-type(1) {
-	margin-left: 2em;
-	margin-top: 1em;
-	margin-bottom: 2em;
-}
-
-.art_3{
-	position:relative;
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	column-gap: 2ch;
-	padding-bottom: 13ch;
-}/* Hier eindigt de grid voor section 4 */
-
-/* begin van de footer navigatie */
-.footer_nav li {
-	object-fit: cover;
-    list-style: none;
-}
-
-.footer_nav ul:nth-of-type(1) {
-	width: 100%;
-	object-fit: cover;
-	list-style: none;
-	grid-area: 1/4/2/7;
-	padding-left: 1em;
-}
-
-.footer_nav ul li:first-of-type {
-	font-weight: bold;
-	padding-bottom: 1em;
-}
-
-.footer_nav li {
-	padding-bottom: 0.7em;
-	font-weight: lighter;
-	font-size: 1.7ch;
-}
-
-
-.footer_nav ul:nth-of-type(2) {
-	width: 100%;
-	object-fit: cover;
-	list-style: none;
-	grid-area: 1/9/2/12;
-	padding: 0;
-}
-
-.footer_nav ul:nth-of-type(3) {
-	width: 100%;
-	object-fit: cover;
-	list-style: none;
-	grid-area: 1/14/2/17;
-	padding: 0;
-}
-
-.footer_nav {
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-} /* Einde footer navigatie */
-
-/* positie van de socials icons. */
-.logo {
-	padding: 2em 0em 2em 18em;
-}
-
-.logo a{
-	padding-right: 0.1em;
-	padding-left: 1em;
-	text-decoration: 0;
-}/* einde positie van de socials icons. */
-
-/* footer onder de hr */
-footer hr {
-	margin-bottom: 2em;
-	width: 68%;
-}
-
-.footer_nav2 li {
-	display: inline-block;
-	list-style: none;
-	padding-left: 1em;
-	font-weight: lighter;
-}
-
-.footer_nav2 ul:nth-of-type(1) {
-	width: 100%;
-	object-fit: cover;
-	list-style: none;
-	padding: 0;
-	grid-area: 1/4/2/7;
-}
-
-.footer_nav2 img {
-	object-fit: cover;
+/* Start code header */
+header img{
 	width: 2em;
-	padding-top: 1.2ch;
-	grid-area: 1/12/2/16;
+	margin: .3em;
+	margin-left: 1.5em;
 }
 
-.footer_nav2 p {
-	grid-area: 1/12/2/17;
-	padding-left: 2.5em;
+.menu ul{
+	list-style: none;
+	padding: 0;
+	float: right;
+	margin-right: 1em;
+	margin-top: .7em;
 }
 
-.footer_nav2 {
-	display: grid;
-	grid-template-columns: repeat(18, 1fr);
-	margin-bottom: 6em;
-}/* einde footer onder de hr */
+.menu ul li{
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: var(--color-text2);
+	display: block;
+	font-size: 1.2em;
+}
+
+.menu a:hover{
+	color: var(--color-button);
+	transition: .3s;
+  }
+
+header {
+	height: 2.9em;
+	width: 100%;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+
+}
+
+.menu2 {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+  }
+  
+  .menu2 #myLinks {
+	display: none;
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	margin-left: 1.5em;
+  }
+
+  .menu2 #myLinks a {
+	padding: 1em 0em 1em 0em;
+	font-size: 1.2em;
+  }
+  
+   .menu2 a {
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+
+  .menu2 a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 14px 16px;
+  }
+  
+/* Einde code header */
+  
+
+/* Start code main */
+.banner {
+	background-color: var(--color-body);
+	padding-bottom: .5em;
+}
+
+.banner h1{
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.banner h2{
+	font-size: 1.5em;
+	font-style: italic;
+	margin-top: .5em;
+}
+
+.banner p{
+	margin-bottom: 1.5em;
+	max-width: 700px;
+	font-size: 1.2em;
+}
+
+.banner a {
+	color: var(--color-text);
+	text-decoration: none;
+	background-color: var(--color-button);
+	padding: .5em 1em .5em 1em;
+	border-radius: .5em;
+	margin: 2em .5em 0 0;
+	font-size: 1.2em;
+}
+
+.banner a:nth-of-type(2){
+	margin-left: .5em;
+}
+
+.banner a, .projecten a{
+	background-color: var(--color-button);
+	border-radius: .5em;
+	color: var(--color-text);
+	transition: .3s;
+  }
+  
+.banner a:hover, .projecten a:hover {
+	box-shadow: 8px 8px #f8e48d;
+	transition: .3s;
+  }
+
+.vid video {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.team img, .taal img {
+	max-width: 600px;
+}
+
+.projecten a{
+	text-decoration: none;
+	color: var(--color-text);
+	background-color: var(--color-button);
+	padding: .5em 1em .5em 1em;
+	border-radius: .5em;
+}
+
+.projecten {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt ervoor dat de artikelen naar de volgende regel gaan als er niet genoeg ruimte is */
+    justify-content: space-between;
+}
+
+#project {
+    flex: 0 0 100%; /* Zorgt ervoor dat het <h2> de volledige breedte inneemt en niet meedoet aan de flexbox-verdeling */
+    margin-bottom: 20px; 
+}
+
+.talenoveral, .samenbloei{
+	background-color: var(--color-background);
+	margin: 1em 0em 6em 0em;
+	border-radius: .5em;
+}
+
+.talenoveral img, .samenbloei img{
+	border-radius: .5em .5em 0 0;
+}
+
+.talenoveral h3, .samenbloei h3 {
+	font-size: 1.5em;
+	padding-top: 1em;
+}
+
+.talenoveral p, .samenbloei p {
+    max-width: 700px;
+	font-size: 1.2em;
+}
+
+.talenoveral a, .samenbloei a {
+    display: inline-block; 
+	font-size: 1.2em;
+}
+
+.talenoveral :not(img), .samenbloei :not(img) {
+	margin: 1em;
+}
+
+/* Einde code main */
+
+
+/* Start code footer */
+footer {
+	background-color: var(--color-footer);
+	min-height: 3em;
+	position: relative;
+	bottom: 0;
+	display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+footer img {
+	width: 2em;
+	margin-right: 10px;
+}
+
+footer p {
+	color: var(--color-text);
+	font-size: 1.2em;
+}
+
+#cr {
+	color: var(--color-text2);
+	font-size: 1em;
+	padding-left: 5em;
+	margin-bottom: 4em;
+}
+
+footer h3{
+	font-size: 1.5em;
+	margin-bottom: 0;
+	margin-top: 3em;
+}
+
+footer li {
+	list-style: none;
+	display: flex;
+    align-items: center; 
+	/* border-bottom: dotted 3px;
+	color: #F1C50E; */
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer a{
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: .5em;
+	font-size: 1.3em;
+	color: var(--color-text);
+}
+
+.overmij, .team, .taal{
+	background-color: var(--color-background);
+	padding: 1em;
+	border-radius: .5em;
+}
+
+.overmij p, .overmij li, .team p, .taal p{
+	font-size: 1.2em;
+	max-width: 700px;
+}
+
+.overmij a{
+	font-size: 1.2em;
+}
+
+#titel{
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.overmij h2{
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+.overmij h4 {
+	font-size: 1.3em;
+}
+
+.overmij img {
+	margin-bottom: 2em;
+	border-radius: .5em;
+	max-width: 345px;
+	max-height: 345px;
+	margin-left: 12em;
+}
+
+#ikben {
+	display: flex;
+  }
+
+
+/* Media-query voor schermen kleiner dan 700px */
+@media only screen and (max-width: 700px) {
+	header .menu ul{
+		display: none;
+	}
+
+	header .menu img{
+		display: none;
+	}
+
+	#banground {
+		margin: 0 1.5em 3em 1.5em;
+		height: 25em;
+	}
+
+	.banner{
+		margin-bottom: 3em;
+		padding-bottom: 5em;
+	}
+
+	.banner h1{
+		padding-top: 2em;
+	}
+
+	#titel {
+		margin-top: 2.5em;
+	}
+	
+	.projecten, .about, .samen, .talen {
+		margin: 0 1.5em 3em 1.5em;
+	}
+
+	#ikben {
+		display: block;
+	  }
+	  
+	.overmij img {
+		margin-left: 0em;
+	}
+}
+
+
+/* Media-query voor schermen kleiner dan 1000px */
+@media only screen and (width < 1000px) {
+
+	#banground {
+		margin: 0 1.5em -2.5em 1.5em;
+		height: 25em;
+	}
+
+	.banner h1{
+		padding-top: 2em;
+	}
+
+	#titel {
+		margin-top: 2.5em;
+	}
+	
+	.projecten, .about, .samen, .talen {
+		margin: 0 1.5em 3em 1.5em;
+	}
+
+	.talenoveral, .samenbloei {
+		max-width: 1000px;
+	}
+
+	.overmij img {
+		margin-left: 0em;
+	}
+
+	#ikben {
+		display: block;
+	  }
+}
+
+/* Media-query voor schermen breder dan 1000px */
+@media only screen and (width >= 1000px) {
+
+	#banground {
+		margin: 0 1.5em -2.5em 1.5em;
+		height: 25em;
+	}
+
+	.banner h1{
+		padding-top: 2em;
+	}
+
+	#titel {
+		margin-top: 2.5em;
+	}
+	
+	.projecten, .about, .samen, .talen {
+		margin: 0 1.5em 3em 1.5em;
+	}
+	
+	.talenoveral, .samenbloei {
+		max-width: 700px;
+	}
+
+	.projecten > article {
+        max-width: calc(50% - 20px); /* Verdeelt de ruimte tussen de artikelen op grotere schermen */
+    }
+
+	.overmij img {
+		margin-left: 12em;
+	}
+
+}
+
+/* Media-query voor schermen breder dan 1500px */
+@media only screen and (min-width: 1500px) {
+
+	header img{
+		margin-left: 18em;
+	}
+	
+	.menu ul{
+		margin-right: 18em;
+	}
+
+	#banground {
+		margin: 6em 18em 3em 18em;
+		margin-top: 0;
+		height: 25em;
+	}
+
+	.banner h1{
+		padding-top: 3em;
+	}
+	
+	.projecten, .about, .samen, .talen {
+		margin: 6em 18em 3em 18em;
+	}
+
+	.overmij img {
+		margin: 2em 2em 2em 9em;
+	}
+	
+	#ikben, #skills{
+		padding: 2em 2em 2em 4em;
+	}
+
+	.team, .taal{
+		padding: 2em 4em 2em 4em;
+	}
+
+	.taal img{
+		max-width: 100%;
+	}
+
+	#proces{
+		max-width: 50%;
+	}
+
+	.talenproces{
+		display: flex;
+	}
+
+	.talenproces p{
+		max-width: 45%;
+		margin-right: 5%;
+	}
+
+	.proto{
+		display: flex;
+	}
+
+	#proto1{
+		width: 40%;
+		margin-right: 3%;
+	}
+
+	#proto2{
+		width: 60%;
+	}
+
+	.eindresultaat img{
+		margin-bottom: 2em;
+	}
+	
+}

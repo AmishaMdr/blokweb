@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 25px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #99a49b;
+        stroke: #99a49b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-family: Geneva, Geneva;
+        font-size: 160px;
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        stroke-width: 33px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-4" x=".5" y=".5" width="199" height="199" rx="14.59" ry="14.59"/>
+    <path class="cls-4" d="m184.91,1c7.77,0,14.09,6.32,14.09,14.09v169.82c0,7.77-6.32,14.09-14.09,14.09H15.09c-7.77,0-14.09-6.32-14.09-14.09V15.09C1,7.32,7.32,1,15.09,1h169.82m0-1H15.09C6.76,0,0,6.76,0,15.09v169.82c0,8.33,6.76,15.09,15.09,15.09h169.82c8.33,0,15.09-6.76,15.09-15.09V15.09c0-8.33-6.76-15.09-15.09-15.09h0Z"/>
+  </g>
+  <line class="cls-1" x1="45.5" y1="73.5" x2="45.5" y2="171"/>
+  <circle class="cls-3" cx="46" cy="46" r=".5"/>
+  <text class="cls-2" transform="translate(77.53 165.88)"><tspan x="0" y="0">n</tspan></text>
+</svg>
